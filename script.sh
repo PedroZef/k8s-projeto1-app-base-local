@@ -2,13 +2,13 @@
 
 echo "Criando as imagens....."
 
-docker build -t pedrozef/projeto-backend:2.0 backend/.
-docker build -t pedrozef/projeto-database:2.0 database/.
+docker build -t denilsonbonatti/projeto-backend:1.0 backend/.
+docker build -t denilsonbonatti/projeto-database:1.0 database/.
 
 echo "Realizando o push das imagens...."
 
-docker push pedrozef/projeto-backend:2.0 
-docker push pedrozef/projeto-database:2.0
+docker push denilsonbonatti /projeto-backend:1.0 
+docker push denilsonbonatti/projeto-database:1.0
 
 echo "Criando servicos no cluster kubernets..."
 
